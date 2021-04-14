@@ -1,0 +1,9 @@
+#cart-total {
+  flex-basis: 24%;
+  margin-top: 2.5vw;
+  .total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5vw;
+  }
+}

@@ -1,0 +1,112 @@
+const menuData = [
+  [
+    {
+      key: 1,
+      id: 1,
+      type: "breakfast",
+      name: "Bagel and Cream Cheese",
+      price: 6.99,
+    },
+    {
+      key: 2,
+      id: 2,
+      type: "breakfast",
+      name: "Breakfast Sandwich",
+      price: 9.99,
+    },
+    { key: 3, id: 3, type: "breakfast", name: "Baked Chicken", price: 10.99 },
+    { key: 4, id: 4, type: "breakfast", name: "Eggs Benedict", price: 8.99 },
+    {
+      key: 5,
+      id: 5,
+      type: "breakfast",
+      name: "Toast Croissant Fried Egg",
+      price: 19.99,
+    },
+    {
+      key: 6,
+      id: 6,
+      type: "breakfast",
+      name: "Full Breakfast Fried Egg Toast Crunch",
+      price: 3.99,
+    },
+  ],
+  [
+    {
+      key: 7,
+      id: 1,
+      type: "lunch",
+      name: "Salmon with Grapefruit and Lentil Salad",
+      price: 9.99,
+    },
+    {
+      key: 8,
+      id: 2,
+      type: "lunch",
+      name: "Lemony Salmon Piccata",
+      price: 10.99,
+    },
+    {
+      key: 9,
+      id: 3,
+      type: "lunch",
+      name: "Beef Tenderloin with Quinoa Pilaf",
+      price: 12.99,
+    },
+    {
+      key: 10,
+      id: 4,
+      type: "lunch",
+      name: "French Fries with Cheese",
+      price: 8.99,
+    },
+    {
+      key: 11,
+      id: 5,
+      type: "lunch",
+      name: "Garlic Butter Baked Salmon",
+      price: 6.99,
+    },
+    {
+      key: 12,
+      id: 6,
+      type: "lunch",
+      name: "Baked Chicken Salad",
+      price: 9.99,
+    },
+  ],
+  [
+    {
+      key: 13,
+      id: 1,
+      type: "dinner",
+      name: "Healthy Meal Plan",
+      price: 23.99,
+    },
+    {
+      key: 14,
+      id: 2,
+      type: "dinner",
+      name: "Fried Chicken Bento",
+      price: 9.99,
+    },
+    {
+      key: 15,
+      id: 3,
+      type: "dinner",
+      name: "Tarragon-Rubbed Salmon",
+      price: 6.99,
+    },
+    { key: 16, id: 4, type: "dinner", name: "Indian Dinner", price: 8.99 },
+    { key: 17, id: 5, type: "dinner", name: "Beaf Steak", price: 15.99 },
+    {
+      key: 18,
+      id: 6,
+      type: "dinner",
+      name: "Honey Soy Glazed Salmon with Peppers",
+      price: 7.99,
+    },
+  ],
+];
+
+export default menuData;

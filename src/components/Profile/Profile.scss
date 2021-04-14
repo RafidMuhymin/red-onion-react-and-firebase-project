@@ -1,0 +1,31 @@
+#profile {
+  .half {
+    flex-basis: 45%;
+    margin: 2.5%;
+  }
+  .orders {
+    background-color: lightgray;
+    border-radius: 5px;
+    padding: 2vw;
+    margin: 2vw 0;
+  }
+  .profile-picture {
+    width: 10vw;
+    margin-right: 2vw;
+  }
+  .fake-profile-picture {
+    background-color: brown;
+    height: 10vw;
+    span {
+      font-size: 5vw;
+    }
+  }
+}
+
+@media screen and (max-width: 859px) {
+  #profile {
+    .half {
+      margin: 5vw;
+    }
+  }
+}

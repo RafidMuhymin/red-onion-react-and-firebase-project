@@ -1,0 +1,75 @@
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 90%;
+  margin: 5px auto;
+
+  a:not(.logo) {
+    text-decoration: none;
+    padding: 7.5px 20px;
+
+    &:visited {
+      color: black;
+    }
+
+    &:hover,
+    &:focus {
+      color: rgb(27, 207, 207);
+    }
+  }
+  .lni {
+    visibility: hidden;
+    &::before {
+      visibility: visible;
+    }
+  }
+
+  .logo {
+    display: block;
+    margin-right: auto;
+    width: 15%;
+    img {
+      width: 100%;
+    }
+  }
+
+  a.red-button {
+    background-color: rgb(255, 65, 97);
+    border-radius: 50px;
+    color: white;
+    &:hover {
+      background-color: rgb(225, 50, 75);
+    }
+    &:visited {
+      color: white;
+    }
+  }
+}
+#toggler {
+  background-color: white;
+  border: none;
+  display: none;
+}
+#sign-out {
+  background-color: rgb(255, 65, 97);
+  border-radius: 50px;
+  padding: 0 15px;
+  color: white;
+  &:hover {
+    background-color: rgb(225, 50, 75);
+  }
+}
+@media screen and (max-width: 768px) {
+  .navbar {
+    a:not(.logo) {
+      display: none;
+      width: 100%;
+    }
+    button {
+      display: block;
+      font-size: larger;
+      padding: 10px;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.meal {
+  flex-basis: 300px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: black;
+  &:hover {
+    box-shadow: 5px 5px 20px lightgray;
+    color: black;
+  }
+}

@@ -1,0 +1,14 @@
+.delivery-cart-item {
+  background-color: lightgray;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  border-radius: 1vw;
+  .w-25,
+  .w-50 {
+    margin: 0.5vw;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+}

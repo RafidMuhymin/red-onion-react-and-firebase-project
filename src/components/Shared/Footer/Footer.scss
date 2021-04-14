@@ -1,0 +1,43 @@
+.footer {
+  a {
+    color: white;
+    text-align: center;
+  }
+  .footer-widgets {
+    img {
+      width: 25%;
+    }
+    div {
+      margin: 0 25px;
+      a {
+        padding: 5px;
+        display: block;
+        margin: 5px 0;
+      }
+    }
+  }
+  .footer-menu {
+    p {
+      margin: 10px auto 5px 0;
+    }
+    a {
+      margin: 5px 20px;
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .footer-widgets {
+    img {
+      width: 35% !important;
+      margin: auto !important;
+    }
+  }
+  .footer .footer-menu {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    p {
+      width: 100% !important;
+      text-align: center !important;
+    }
+  }
+}

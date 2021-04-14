@@ -1,0 +1,34 @@
+.delivery {
+  display: flex;
+}
+.divider {
+  border: 1px solid lightgray;
+}
+#delivery-details {
+  width: 60%;
+  padding: 2vw;
+}
+#delivery-cart {
+  width: 40%;
+  padding: 1vw;
+  .order-counter {
+    border: none;
+  }
+  button {
+    width: 100%;
+    margin-top: 1vw;
+  }
+}
+#delivery-instruction {
+  height: 100px;
+}
+@media screen and (max-width: 768px) {
+  .delivery {
+    display: block;
+  }
+  #delivery-details,
+  #delivery-cart {
+    width: 75%;
+    margin: auto;
+  }
+}

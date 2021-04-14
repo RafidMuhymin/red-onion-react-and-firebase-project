@@ -1,0 +1,45 @@
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 0;
+  padding: 16.98%;
+  div {
+    h1 {
+      text-align: center;
+      font-size: 4vw;
+    }
+    div {
+      position: relative;
+    }
+  }
+  #foodName {
+    position: absolute;
+    width: 100%;
+    height: 4vw;
+    border-radius: 50px;
+    border: none;
+    padding-left: 3vw;
+    outline: none;
+    font-size: 1.5vw;
+  }
+  #search {
+    position: absolute;
+    right: 0;
+    width: 10vw;
+    background-color: rgb(255, 65, 97);
+    border: none;
+    margin-top: -0.05vw;
+    height: 4vw;
+    padding: 0 2vw;
+    border-radius: 50px;
+    color: white;
+    outline: none;
+    font-size: 1.5vw;
+    &:hover {
+      background-color: rgb(225, 50, 75);
+    }
+  }
+}

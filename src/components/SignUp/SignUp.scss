@@ -1,0 +1,14 @@
+.signup-form {
+  width: 50%;
+  box-shadow: 5px 5px 20px lightgray;
+}
+@media screen and (max-width: 768px) {
+  .signup-form {
+    flex-grow: 1;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .signup-form {
+    width: 25% !important;
+  }
+}
