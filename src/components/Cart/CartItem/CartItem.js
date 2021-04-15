@@ -6,8 +6,8 @@ export default function CartItem({ order, removeProduct, cart, setCart }) {
   const { name, type, id } = order;
   const [quantity, setQuantity] = useState(order.quantity);
 
-  const handleQuantity = (change) => {
-    if (quantity > 1) {
+  const handleQuantity = (change, limit) => {
+    if (quantity > limit) {
       setQuantity(quantity + change);
       addToDatabaseCart(name, quantity + change);
       const newCart = [...cart];
@@ -26,14 +26,14 @@ export default function CartItem({ order, removeProduct, cart, setCart }) {
       />
       <h4>{name}</h4>
       <span className="order-counter">
-        <span className="oc oc-handler" onClick={() => handleQuantity(-1)}>
+        <span className="oc oc-handler" onClick={() => handleQuantity(-1, 1)}>
           -
         </span>
         <span className="oc">{quantity}</span>
         <span
           className="oc oc-handler oc-plus"
           onClick={() => {
-            handleQuantity(1);
+            handleQuantity(1, 0);
           }}
         >
           +
