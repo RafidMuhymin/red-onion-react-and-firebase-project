@@ -6,8 +6,8 @@ export default function DeliveryCartItem({ order, cart, setCart }) {
   const { id, name, type, price } = order;
   const [quantity, setQuantity] = useState(order.quantity);
 
-  const handleQuantity = (change) => {
-    if (quantity > 1) {
+  const handleQuantity = (change, limit) => {
+    if (quantity > limit) {
       setQuantity(quantity + change);
       addToDatabaseCart(name, quantity + change);
       const newCart = [...cart];
@@ -37,7 +37,7 @@ export default function DeliveryCartItem({ order, cart, setCart }) {
           <span
             className="oc oc-handler"
             onClick={() => {
-              handleQuantity(-1);
+              handleQuantity(-1, 1);
             }}
           >
             -
@@ -46,7 +46,7 @@ export default function DeliveryCartItem({ order, cart, setCart }) {
           <span
             className="oc oc-handler oc-plus"
             onClick={() => {
-              handleQuantity(1);
+              handleQuantity(1, 0);
             }}
           >
             +
