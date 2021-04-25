@@ -56,6 +56,7 @@
 }
 @media screen and (max-width: 768px) {
   .navbar {
+    justify-content: flex-start;
     a:not(.logo) {
       display: none;
       width: 100%;
