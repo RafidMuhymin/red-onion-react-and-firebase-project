@@ -42,19 +42,19 @@ export default function Navbar({ cart }) {
     });
   };
 
-  window.addEventListener("resize", () => {
-    const menuItems = document.querySelectorAll(".navbar a:not(.logo)");
-    if (window.innerWidth > 768) {
+  if (typeof window !== "undefined") {
+    window.addEventListener("resize", () => {
+      const menuItems = document.querySelectorAll(".navbar a:not(.logo)");
       Array.prototype.map.call(menuItems, (mI) => {
-        mI.style.display = "block";
-        mI.style.width = "auto";
+        if (window.innerWidth > 768) {
+          mI.style.display = "block";
+          mI.style.width = "auto";
+        } else if (window.innerWidth <= 768 && mI.style.width === "auto") {
+          mI.style.display = "none";
+        }
       });
-    } else {
-      Array.prototype.map.call(menuItems, (mI) => {
-        mI.style.display = "none";
-      });
-    }
-  });
+    });
+  }
 
   return (
     <nav className="navbar">
@@ -70,14 +70,14 @@ export default function Navbar({ cart }) {
         {orderCount > 0 && <span>{orderCount}</span>}
       </Link>
       {loggedInUser.isSignedIn ? (
-        <span className="d-flex">
+        <span className="d-flex flex-column flex-md-row">
           <Link to="/profile">Profile</Link>
           <button onClick={signOut} className="btn" id="sign-out">
             Sign Out
           </button>
         </span>
       ) : (
-        <span className="d-flex">
+        <span className="d-flex flex-column flex-md-row">
           <Link to="/login">Login</Link>
           <Link className="red-button" to="/sign-up">
             Sign Up

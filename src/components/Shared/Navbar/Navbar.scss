@@ -18,12 +18,6 @@
       color: rgb(27, 207, 207);
     }
   }
-  .lni {
-    visibility: hidden;
-    &::before {
-      visibility: visible;
-    }
-  }
 
   .logo {
     display: block;
@@ -62,13 +56,14 @@
 }
 @media screen and (max-width: 768px) {
   .navbar {
+    justify-content: center;
     a:not(.logo) {
       display: none;
       width: 100%;
     }
-    button {
+    #toggler {
       display: block;
-      font-size: larger;
+      font-size: x-large;
       padding: 10px;
     }
   }
